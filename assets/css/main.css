@@ -1757,27 +1757,28 @@ input, select, textarea {
 	section.special, article.special {
 		text-align: center;
 	}
-	  #maps_inner
-	  {
-		  margin-left: 15px;
-		  margin-bottom: 10px;
-		  width: 1800px;
-}
-.resp-container {
-    position: relative;
-    overflow: hidden;
-    
-}
-#address
-{
-	display: block;
-	margin-left: 1px;
-	/*margin-bottom: 1px;*/
-}
-#map_cap
-{
-	margin: 15px;
-}
+	#sitemap_span
+	{
+		margin-left: 100px;
+	}
+	#sitemap
+	{
+		
+		background-color:black;
+	}
+	.map_wrapper {
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 */
+		padding-top: 25px;
+		height: 0;
+	}
+	.map_wrapper iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
 	header p {
 		color: rgba(255, 255, 255, 0.5);
 		position: relative;
