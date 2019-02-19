@@ -1757,7 +1757,27 @@ input, select, textarea {
 	section.special, article.special {
 		text-align: center;
 	}
-
+	  #maps_inner
+	  {
+		  margin-left: 15px;
+		  margin-bottom: 10px;
+		  width: 1800px;
+}
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    
+}
+#address
+{
+	display: block;
+	margin-left: 1px;
+	/*margin-bottom: 1px;*/
+}
+#map_cap
+{
+	margin: 15px;
+}
 	header p {
 		color: rgba(255, 255, 255, 0.5);
 		position: relative;
