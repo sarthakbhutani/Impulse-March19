@@ -8,7 +8,7 @@
 */
 
 html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+iframe, h1, h2, h3, h4,h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
@@ -2672,6 +2672,11 @@ input, select, textarea {
 			order: 2;
 			max-width: 48em;
 			width: 60%;
+			
+		}
+
+		.spotlight  p{
+			color: rgb(218, 206, 206);
 		}
 
 		.spotlight:nth-child(2n) {
