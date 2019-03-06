@@ -4011,7 +4011,7 @@ input, select, textarea {
 
 	.bgbox{
 		height: 100px;
-		background-color: #ed4933;
+		background:transparent;
 		
 		text-align: center;
 		padding: 23px;
@@ -4023,5 +4023,5 @@ input, select, textarea {
 	  #demo{
 		color: white;
 		font-weight:600;
-		height: 50%;
+		height: 150px;
 	  }
