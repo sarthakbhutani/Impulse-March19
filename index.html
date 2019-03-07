@@ -5,8 +5,14 @@
 		<title>IOSD</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="landing is-preload">
@@ -19,7 +25,7 @@
 
 						
 
-						<h1><a href="index.html">< <i>I</i> OSD></a></h1>
+						<h1><a href="index.html"> <i>I</i> OSD></a></h1>
 
 						<nav id="nav">
 							<ul>
@@ -48,6 +54,41 @@
 
 							<h2>IOSD</h2>
 
+							<div class="bgbox">
+
+								<h1 id="demo"></h1>
+								<script>
+								// Set the date we're counting down to
+								var countDownDate = new Date("Mar 28, 2019 00:00:00").getTime();
+								
+								// Update the count down every 1 second
+								var x = setInterval(function() {
+								
+									// Get todays date and time
+									var now = new Date().getTime();
+									
+									// Find the distance between now and the count down date
+									var distance = countDownDate - now;
+									
+									// Time calculations for days, hours, minutes and seconds
+									var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+									var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+									var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+									var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+									
+									// Output the result in an element with id="demo"
+									document.getElementById("demo").innerHTML = days + "D " + hours + "H "
+									+ minutes + "M " + seconds + "S ";
+									
+									// If the count down is over, write some text 
+									if (distance < 0) {
+									clearInterval(x);
+									document.getElementById("demo").innerHTML = "EXPIRED";
+									}
+								}, 1000);
+								</script>
+							</div>	
+
 
 							<ul class="actions special">
 								<li><a href="#" class="button primary">REGISTER</a></li>
@@ -55,6 +96,8 @@
 						</div>
 						<a href="#one" class="more scrolly">Learn More</a>
 					</section>
+
+					
 
 				<!-- One -->
 					<section id="one" class="wrapper style1 special">
@@ -81,7 +124,58 @@
 								<h5 style="color:#21b2a6">Hack it till you Crack it!</h5>
 								<p>8 Hours of pitching on provided themes collaborating to code, develop and deploy innovative solutions!</p>
 								<button href="#" class="primary">Register</button>
-							    <button href="#" class="primary">View Rulebook</button>
+								<div class="modal fade" id="darkModalForm_hacks" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+								aria-hidden="true">
+								<div class="modal-dialog form-dark" role="document">
+									<!--Content-->
+									<div class="modal-content card card-image" style="background:black;">
+										<div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
+											<!--Header-->
+											<div class="modal-header text-center pb-4">
+												<h3 class="modal-title w-100 white-text font-weight-bold" id="myModalLabel"><strong>MaitHacks
+												</strong>&nbsp;&nbsp;&nbsp;
+												<button type="button"  data-dismiss="modal" >
+												 Close
+										 
+												</button>
+											</div>
+											<!--Body-->
+											<div class="modal-body">
+												<!--Body-->
+												<div class="md-form mb-5">
+													<p>To check your innovative mind and coding skills grab the opportunity of HackMait. The event consists of two rounds, starting from 13th April at 10 am for the next 36 hours. 
+														Participants need to register in teams of maximum 4.</p>
+											<div class=" text-center pb-4">
+												<h3 class="modal-title w-100 white-text font-weight-bold"id="myModalLabel" style="background: crimson"><strong>ROUND 1</strong></h3>
+												<div style="border-color: antiquewhite"><p >It will be an online round where participants will get two random keywords generated from the website on 7th April from 9 pm onwards. 
+													The teams would be required to submit their project ideas based on both of the keywords provided and upload on our website before 12 pm of 8th April 2018. 
+													The results of Round 1 will be sent to the shortlisted teams via email on the same day by 6 pm. Selection will be based on the originality and usefulness of the idea submitted.</p></div>
+												</div>
+							
+												<div class=" text-center pb-4">
+												<h3 class="modal-title w-100 white-text font-weight-bold"id="myModalLabel" style="background: crimson"><strong>ROUND 2</strong></h3>
+												<div style="border-color: antiquewhite"><p >The Second Round will be held in the MAIT Campus on 9th April - 9am onwards. 
+													In this round, selected teams from round 1 would have to come for the project pitching and demonstration.</p></div>
+												</div>
+												<div >&nbsp;<p style="color: rgb(0, 190, 95);align-content: center" >Get ready for prizes worth Rs 1 lakh, Cash prize of Rs 20,000 , internship and incubation offers, Certificates, .tech domains to everyone and much more. Come on guys, do it for the cookies, if nothing else.</p></div>
+												
+										</div>
+										
+							
+											
+							
+										 
+							
+											
+											 
+							
+											</div>
+										</div>
+									</div>
+									<!--/.Content-->
+								</div>
+							</div>
+							<button class="primary mx-2" data-toggle="modal" data-target="#darkModalForm_hacks">View Rule Book</button>
 							</div>
 							
 						</section>
@@ -91,8 +185,65 @@
 								<h5 style="color:#21b2a6">Groove to your Rythm and apply the right Algorithm!</h5>
 								<p>If all you think about is code then, it's time to gear up and let that coding spirit inside you rule the real world. Coders, Assemble!</p>
 								<button href="#" class="primary">Register</button>
-							    <button href="#" class="primary">View Rulebook</button>
-							</div>
+								
+  <button class="primary mx-2" data-toggle="modal" data-target="#darkModalForm_algo">View Rule Book</button>
+									<!-- Trigger the modal with a button -->
+								
+								  
+									<!-- Modal -->
+									<div class="modal fade" id="darkModalForm_algo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog form-dark" role="document">
+    <!--Content-->
+    <div class="modal-content card card-image" style="background:black;">
+      <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
+        <!--Header-->
+        <div class="modal-header text-center pb-4">
+          <h3 class="modal-title w-100 white-text font-weight-bold" id="myModalLabel"><strong>AlgoRythm</strong>&nbsp;&nbsp;&nbsp;
+          <button type="button"  data-dismiss="modal" >
+           Close
+		   
+          </button>
+        </div>
+        <!--Body-->
+        <div class="modal-body">
+          <!--Body-->
+          <div class="md-form mb-5">
+            <p>If you have great logical and problem solving skills,come on! This event could help in your coffee bills. 
+				The event will commence at 9 am on 10th April 2018.</p>
+				<div class=" text-center pb-4">
+					<h3 class="modal-title w-100 white-text font-weight-bold"id="myModalLabel" style="background: crimson"><strong>ROUND 1</strong></h3>
+					<div style="border-color: antiquewhite"><p >Round 1 would be a 2 hour problem solving competitive round. Participants can use any language of their choice.</p></div>
+				  </div>
+
+				  <div class=" text-center pb-4">
+					<h3 class="modal-title w-100 white-text font-weight-bold"id="myModalLabel" style="background: crimson"><strong>ROUND 2</strong></h3>
+					<div style="border-color: antiquewhite"><p >Top 8 Participants of Round 1 will compete against each other in a series of knockout rounds. Winners of this round will also become the finalists for a coding event in IIT Roorkee</p></div>
+				  </div>
+				  <div >&nbsp;<p style="color: rgb(0, 190, 95);align-content: center" >The winners will be awarded with exciting prizes and internship offers. Top participants will be provided with Certificates of Appreciation.</p></div>
+				  
+		  </div>
+		  
+
+        
+
+       
+
+        
+         
+
+        </div>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!-- Modal -->
+
+
+  
+
+							
 						</section>
 						<section class="spotlight">
 							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
@@ -101,7 +252,63 @@
 								<p>Creativity in your genes? 
 									We’ve got something for you, a web development event to design and develop an amazing master piece by shaping your imagination into reality and creating wonders.</p>
 								<button href="#" class="primary">Register</button>
-							    <button href="#" class="primary">View Rulebook</button>
+								<div class="modal fade" id="darkModalForm_webbash" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+								aria-hidden="true">
+								<div class="modal-dialog form-dark" role="document">
+									<!--Content-->
+									<div class="modal-content card card-image" style="background:black;">
+										<div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
+											<!--Header-->
+											<div class="modal-header text-center pb-4">
+												<h3 class="modal-title w-100 white-text font-weight-bold" id="myModalLabel"><strong>WebBash												</strong>&nbsp;&nbsp;&nbsp;
+												<button type="button"  data-dismiss="modal" >
+												 Close
+										 
+												</button>
+											</div>
+											<!--Body-->
+											<div class="modal-body">
+												<!--Body-->
+												<div class="md-form mb-5">
+													<p>Time to make lives simpler! If you got the talent Participate in this event or you will lament 
+														UI/UX Designing will consist of 2 rounds.</p>
+											<div class=" text-center pb-4">
+												<h3 class="modal-title w-100 white-text font-weight-bold"id="myModalLabel" style="background: crimson"><strong>ROUND 1</strong></h3>
+												<div style="border-color: antiquewhite"><p >It will be an online round. The participants need to send their best works at iosdmait@iosd.tech 
+													Participants with the best work will be selected for Round 2.</p></div>
+												</div>
+							
+												<div class=" text-center pb-4">
+												<h3 class="modal-title w-100 white-text font-weight-bold"id="myModalLabel" style="background: crimson"><strong>ROUND 2</strong></h3>
+												<div style="border-color: antiquewhite"><p >This will be an offline round. It will be held in the MAIT Campus on 9 April 2018 from 2-5 p.m. The selected participants will have to design a UI/UX on the themes which will be given on the spot.</p></div>
+												</div>
+												<div >&nbsp;<p style="color: rgb(0, 190, 95);align-content: center" >Participants can choose to design for either mobile app or website. 
+													Plagiarised designs will not be accepted. Participants should carry their own laptops. 
+													<br>
+													<div style="color: yellow">Designers, time to get down to work!</div></p></div>
+												
+										</div>
+										
+							
+											
+							
+										 
+							
+											
+											 
+							
+											</div>
+										</div>
+									</div>
+									<!--/.Content-->
+								</div>
+							</div>
+							<!-- Modal -->
+							
+							
+								<button class="primary mx-2" data-toggle="modal" data-target="#darkModalForm_webbash">View Rule Book</button>
+							
+							    
 							</div>
 						</section>
 						<section class="spotlight">
@@ -110,6 +317,7 @@
 								<h5 style="color:#21b2a6">Explore the unrevealed!!!</h5>
 								<p>Well, Impulse'19 won’t let you down. We bring to you an intensive 6-hour workshop that will help you learn, visualize and hone your skills with various group discussions to encourage innovative thinking. Grab this opportunity to learn from experienced personnel and expand your share of knowledge.</p>
 								<button href="#" class="primary">Register</button>
+		
 							</div>
 						</section>
 						<section class="spotlight">
@@ -125,7 +333,7 @@
 								<h2>Respawn : <br><h3>CSGO Gaming Event</h3></h2>
 								<h5 style="color:#21b2a6">Gamers don't die , they respawn</h5>
 								<p>A gaming event for the avid gamers everywhere. Its your chance to beat all your opponents and show them who's the boss.</p>
-								<button href="#" class="primary">Register</button>
+								<button href="#" class="primary my-4">Register</button>
 							</div>
 						</section>
 					</section>
@@ -191,7 +399,7 @@
 							</div></div>
 							<a href="https://www.google.com/maps/dir//Maharaja+Agrasen+Institute+Of+Technology,+Sector+22,+PSP+Area,+Delhi/@28.7197748,77.0310713,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d068dbf44ecd7:0xc4ce5551f8ac8360!2m2!1d77.066091!2d28.719704?hl=en-GB" target="blank"><div id="sitemap"><span id="sitemap_span">Plot No 1 Rohini, Sector 22, PSP Area, Delhi, 110086</span></div></a>
 						  
-                      <!--FAQs-->
+
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="icons">
@@ -205,7 +413,8 @@
 							<li>&copy; Untitled</li><li></li>
 						</ul>
 					</footer>
-
+                
+<span class="event-link" data-toggle="modal" data-target="#hack_rulebook" style="cursor: pointer;">View RuleBook</span>
 			</div>
 
 		<!-- Scripts -->
