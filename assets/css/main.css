@@ -4056,8 +4056,8 @@ input, select, textarea {
 	  .align{
 		  align-items: center;
 	  }
-	  .mait_hacks
-	  {
-		  text-align: justify;
-		  text-justify: inter-word;
-	  }
+
+	  .fixed-top.scrolled {
+		background: black;
+		transition: background 500ms;
+	}
