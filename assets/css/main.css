@@ -4056,3 +4056,8 @@ input, select, textarea {
 	  .align{
 		  align-items: center;
 	  }
+
+	  .fixed-top.scrolled {
+		background: black;
+		transition: background 500ms;
+	}
