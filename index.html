@@ -5,7 +5,14 @@
 		<title>IOSD</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		
 		<link rel="stylesheet" href="assets/css/main.css" />
+	
+	
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="landing is-preload">
@@ -14,39 +21,96 @@
 			<div id="page-wrapper">
 
 				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">< <i>I</i> OSD></a></h1>
-						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Generic</a></li>
-											<li><a href="elements.html">Elements</a></li>
-											<li><a href="#">Sign Up</a></li>
-											<li><a href="#">Log In</a></li>
-										</ul>
-									</div>
+				<header >
+
+
+						<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navcolour">
+							<a class="navbar-brand" href="#">
+								<img src="./images/LOGO1.PNG" alt="logo">
+							</a>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							  <span class="navbar-toggler-icon"></span>
+							</button>
+						  
+							<div class="collapse navbar-collapse align" id="navbarSupportedContent">
+							  <ul class="navbar-nav ml-auto" >
+								<li class="nav-item active">
+								  <a class="nav-link" href="#one">ABOUT</a>
 								</li>
-							</ul>
-						</nav>
+								<li class="nav-item">
+									<a class="nav-link" href="#two">EVENTS</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#three">FAQs</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">SPONSOR</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">OUR TEAM</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">GALLERY</a>
+								</li>
+
+							  </ul>	  
+						    </div>
+					    </nav>
 					</header>
 
 				<!-- Banner -->
 					<section id="banner">
 						<div class="inner">
-							<h2>< <i>I</i> OSD></h2>
-							<p>some some some some somethingggggg<br />
-								some some somethingggggg<br />
-							bla bla</p>
+							<div class="iosdlogo">
+							<img width="500" src="./images/IMPULSE'19-logo.png">
+								</div>
+
+							<h2>IOSD</h2>
+
+							<div class="bgbox">
+
+								<h1 id="demo"></h1>
+								<script>
+								// Set the date we're counting down to
+								var countDownDate = new Date("Mar 28, 2019 00:00:00").getTime();
+								
+								// Update the count down every 1 second
+								var x = setInterval(function() {
+								
+									// Get todays date and time
+									var now = new Date().getTime();
+									
+									// Find the distance between now and the count down date
+									var distance = countDownDate - now;
+									
+									// Time calculations for days, hours, minutes and seconds
+									var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+									var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+									var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+									var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+									
+									// Output the result in an element with id="demo"
+									document.getElementById("demo").innerHTML = days + "D " + hours + "H "
+									+ minutes + "M " + seconds + "S ";
+									
+									// If the count down is over, write some text 
+									if (distance < 0) {
+									clearInterval(x);
+									document.getElementById("demo").innerHTML = "EXPIRED";
+									}
+								}, 1000);
+								</script>
+							</div>	
+
+
 							<ul class="actions special">
 								<li><a href="#" class="button primary">REGISTER</a></li>
 							</ul>
 						</div>
 						<a href="#one" class="more scrolly">Learn More</a>
 					</section>
+
+					
 
 				<!-- One -->
 					<section id="one" class="wrapper style1 special">
@@ -69,72 +133,331 @@
 					<section id="two" class="wrapper alt style2">
 						<section class="spotlight">
 							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
-								<h2>EVENT 1<br />
-								name </h2>
-								<p>descriptpn goes here. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								<h2>MaitHacks</h2>
+								<h5 style="color:#21b2a6">Hack it till you Crack it!</h5>
+								<p>8 Hours of pitching on provided themes collaborating to code, develop and deploy innovative solutions!</p>
+								<button href="#" class="primary">Register</button>
+								<div class="modal fade" id="darkModalForm_hacks" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+								aria-hidden="true">
+								<div class="modal-dialog form-dark" role="document">
+									<!--Content-->
+									<div class="modal-content card card-image" style="background:black;">
+										<div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
+											<!--Header-->
+											<div class="modal-header text-center pb-4">
+												<h3 class="modal-title w-100 white-text font-weight-bold" id="myModalLabel"><strong>MaitHacks
+												</strong>&nbsp;&nbsp;&nbsp;
+												<button type="button"  data-dismiss="modal" >
+												 Close
+										 
+												</button>
+											</div>
+											<!--Body-->
+											<div class="modal-body">
+												<!--Body-->
+												<div class="md-form mb-5"class="mait_hacks">
+													<p>To check your innovative mind and coding skills grab the opportunity of HackMait. The event consists of two rounds, starting from 13th April at 10 am for the next 36 hours. 
+														Participants need to register in teams of maximum 4.</p>
+											<div class=" text-center pb-4">
+												<h3 class="modal-title w-100 white-text font-weight-bold"id="myModalLabel" style="background: crimson"><strong>ROUND 1</strong></h3>
+												<div style="border-color: antiquewhite;"class="mait_hacks"><p>It will be an online round where participants will get two random keywords generated from the website on 7th April from 9 pm onwards. 
+													The teams would be required to submit their project ideas based on both of the keywords provided and upload on our website before 12 pm of 8th April 2018. 
+													The results of Round 1 will be sent to the shortlisted teams via email on the same day by 6 pm. Selection will be based on the originality and usefulness of the idea submitted.</p></div>
+												</div>
+							
+												<div class=" text-center pb-4">
+												<h3 class="modal-title w-100 white-text font-weight-bold"id="myModalLabel" style="background: crimson"><strong>ROUND 2</strong></h3>
+												<div class="mait_hacks"><p>The Second Round will be held in the MAIT Campus on 9th April-9am onwards. 
+													In this round, selected teams from round 1 would have to come for the project pitching and demonstration.</p></div></div>
+												
+												<div class="mait_hacks">&nbsp;<p style="color: rgb(0, 190, 95);align-content: center" >Get ready for prizes worth Rs 1 lakh, Cash prize of Rs 20,000 , internship and incubation offers, Certificates, .tech domains to everyone and much more. <div style="color: yellow;">Come on guys, do it for the cookies, if nothing else.</div></p></div></div>
+												
+										</div>
+										
+							
+											
+							
+										 
+							
+											
+											 
+							
+											</div>
+										</div>
+									</div>
+									<!--/.Content-->
+								</div>
+							
+							<button class="primary mx-2" data-toggle="modal" data-target="#darkModalForm_hacks">View Rule Book</button>
 							</div>
+							
 						</section>
 						<section class="spotlight">
 							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
-								<h2>EVENT 2<br />
-								name </h2>
-								<p>descriptpngoes here . Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
-							</div>
+								<h2>AlgoRythm :<br> <h3>Online Competitive Coding</h3></h2>
+								<h5 style="color:#21b2a6">Groove to your Rythm and apply the right Algorithm!</h5>
+								<p>If all you think about is code then, it's time to gear up and let that coding spirit inside you rule the real world. Coders, Assemble!</p>
+								<button href="#" class="primary">Register</button>
+								
+  <button class="primary mx-2" data-toggle="modal" data-target="#darkModalForm_algo">View Rule Book</button>
+									<!-- Trigger the modal with a button -->
+								
+								  
+									<!-- Modal -->
+									<div class="modal fade" id="darkModalForm_algo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog form-dark" role="document">
+    <!--Content-->
+    <div class="modal-content card card-image" style="background:black;">
+      <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
+        <!--Header-->
+        <div class="modal-header text-center pb-4">
+          <h3 class="modal-title w-100 white-text font-weight-bold" id="myModalLabel"><strong>AlgoRythm</strong>&nbsp;&nbsp;&nbsp;
+          <button type="button"  data-dismiss="modal" >
+           Close
+		   
+          </button>
+        </div>
+        <!--Body-->
+        <div class="modal-body">
+          <!--Body-->
+          <div class="md-form mb-5"class="mait_hacks">
+            <p>If you have great logical and problem solving skills,come on! This event could help in your coffee bills. 
+				The event will commence at 9 am on 10th April 2018.</p>
+				<div class=" text-center pb-4">
+					<h3 class="modal-title w-100 white-text font-weight-bold"id="myModalLabel" style="background: crimson"><strong>ROUND 1</strong></h3>
+					<div style="border-color: antiquewhite" class="mait_hacks"><p >Round 1 would be a 2 hour problem solving competitive round. Participants can use any language of their choice.</p></div>
+				  </div>
+
+				  <div class=" text-center pb-4">
+					<h3 class="modal-title w-100 white-text font-weight-bold"id="myModalLabel" style="background: crimson"><strong>ROUND 2</strong></h3>
+					<div style="border-color: antiquewhite" class="mait_hacks"><p >Top 8 Participants of Round 1 will compete against each other in a series of knockout rounds. Winners of this round will also become the finalists for a coding event in IIT Roorkee</p></div>
+				  </div>
+				  <div >&nbsp;<p style="color: rgb(0, 190, 95);"class="mait_hacks" >The winners will be awarded with exciting prizes and internship offers. Top participants will be provided with Certificates of Appreciation.</p></div>
+				  
+		  </div>
+		  
+
+        
+
+       
+
+        
+         
+
+        </div>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!-- Modal -->
+
+
+  
+
+							
 						</section>
 						<section class="spotlight">
 							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
-								<h2>EVENT 2<br />
-								NAME</h2>
-								<p>descriptpngoes here . Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								<h2>WebBash : <br> <h3>Web Design Competition</h3></h2>
+								<h5 style="color:#21b2a6"><span style="text-decoration:line-through">BroZoned</span> <span style="text-decoration:line-through">FriendZoned</span> WebZoned</h5>
+								<p>Creativity in your genes? 
+									We’ve got something for you, a web development event to design and develop an amazing master piece by shaping your imagination into reality and creating wonders.</p>
+								<button href="#" class="primary">Register</button>
+								<div class="modal fade" id="darkModalForm_webbash" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+								aria-hidden="true">
+								<div class="modal-dialog form-dark" role="document">
+									<!--Content-->
+									<div class="modal-content card card-image" style="background:black;">
+										<div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
+											<!--Header-->
+											<div class="modal-header text-center pb-4">
+												<h3 class="modal-title w-100 white-text font-weight-bold" id="myModalLabel"><strong>WebBash												</strong>&nbsp;&nbsp;&nbsp;
+												<button type="button"  data-dismiss="modal" >
+												 Close
+										 
+												</button>
+											</div>
+											<!--Body-->
+											<div class="modal-body">
+												<!--Body-->
+												<div class="md-form mb-5"class="mait_hacks">
+													<p>Time to make lives simpler! If you got the talent Participate in this event or you will lament 
+														UI/UX Designing will consist of 2 rounds.</p>
+											<div class=" text-center pb-4">
+												<h3 class="modal-title w-100 white-text font-weight-bold"id="myModalLabel" style="background: crimson"><strong>ROUND 1</strong></h3>
+												<div style="border-color: antiquewhite"class="mait_hacks"><p >It will be an online round. The participants need to send their best works at iosdmait@iosd.tech 
+													Participants with the best work will be selected for Round 2.</p></div>
+												</div>
+							
+												<div class=" text-center pb-4">
+												<h3 class="modal-title w-100 white-text font-weight-bold"id="myModalLabel" style="background: crimson"><strong>ROUND 2</strong></h3>
+												<div class="mait_hacks"><p >This will be an offline round. It will be held in the MAIT Campus on 9 April 2018 from 2-5 p.m. The selected participants will have to design a UI/UX on the themes which will be given on the spot.</p></div>
+												</div>
+												<div class="mait_hacks" >&nbsp;<p style="color: rgb(0, 190, 95);align-content: center" >Participants can choose to design for either mobile app or website. 
+													Plagiarised designs will not be accepted. Participants should carry their own laptops. 
+													<br>
+													<div style="color: yellow">Designers, time to get down to work!</div></p></div>
+												
+										</div>
+										
+							
+											
+							
+										 
+							
+											
+											 
+							
+											</div>
+										</div>
+									</div>
+									<!--/.Content-->
+								</div>
+							</div>
+							<!-- Modal -->
+							
+							
+								<button class="primary mx-2" data-toggle="modal" data-target="#darkModalForm_webbash">View Rule Book</button>
+							
+							    
 							</div>
 						</section>
 						<section class="spotlight">
 							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
-								<h2>EVENT 4<br />
-								name </h2>
-								<p>descriptpngoes here . Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								<h2>Explora : <br><h3>Machine Learning Workshop</h3></h2>
+								<h5 style="color:#21b2a6">Explore the unrevealed!!!</h5>
+								<p>Well, Impulse'19 won’t let you down. We bring to you an intensive 6-hour workshop that will help you learn, visualize and hone your skills with various group discussions to encourage innovative thinking. Grab this opportunity to learn from experienced personnel and expand your share of knowledge.</p>
+								<button href="#" class="primary">Register</button>
+		
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
+								<h2>DEAD SHOT : <br><h3>PUBG Gaming Event</h3></h2>
+								<h5 style="color:#21b2a6">Yeh PUBG vala hai kya ? </h5>
+								<p>A gaming event for the avid gamers everywhere. Its your chance to beat all your opponents and show them who's the boss. </p>
+								<button href="#" class="primary">Register</button>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
+								<h2>Respawn : <br><h3>CSGO Gaming Event</h3></h2>
+								<h5 style="color:#21b2a6">Gamers don't die , they respawn</h5>
+								<p>A gaming event for the avid gamers everywhere. Its your chance to beat all your opponents and show them who's the boss.</p>
+								<button href="#" class="primary my-4">Register</button>
 							</div>
 						</section>
 					</section>
 
-				<!-- Three -->
+				
+					<!-- Three -->
 					<section id="three" class="wrapper style3 special">
 						<div class="inner">
-							<header class="major">
-								<h2>Accumsan mus tortor nunc aliquet</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
-							</header>
-							<ul class="features">
-								<li class="icon fa-paper-plane-o">
-									<h3>Arcu accumsan</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-laptop">
-									<h3>Ac Augue Eget</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-code">
-									<h3>Mus Scelerisque</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-headphones">
-									<h3>Mauris Imperdiet</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-heart-o">
-									<h3>Aenean Primis</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-flag-o">
-									<h3>Tortor Ut</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-							</ul>
+							<header>
+	                      <h1 style="font-size:30px;">FAQ</h1>
+
+                        </header>
+
+								<section class="deadline">
+							<h1 style="color:white;font-size:25px;font-family: 'Overpass', sans-serif;font-family: 'Noto Sans', sans-serif;position:relative;text-align:center;">Deadlines</h1>	
+							<div style="display:flex;justify-content:center;font-size:20px;">
+								<p> MAITHacks11 April 12 Midnight</p>
+								 <br>
+								 <p> Explora11 April 12 Midnight
+								  </p><br>
+								 <p>  WebDash11 April 12 Midnight
+								  </p><br>
+								 <p> AlgoRhythm11 April 12 Midnight
+								  </p><br>
+								 <p> DevDash11 April 12 Midnight
+								  </p>
+							</div>
+
+
+							</section>
+							 <!-- cd-faq-categories -->
+
+								<div class="cd-faq-items">
+									<ul id="basics" class="cd-faq-group">
+										<li class="cd-faq-title"><h2 >MaitHacks</h2></li>
+										<li >
+											<a href="#0" >Can students from branches apart from CSE/IT participate? Also, can hardware models like that of IOT, block chain be included in the project submission?</a>
+											<div class="cd-faq-content">
+												<p>Students from any branch can take part in the competition. Yes, the project submission can include both hardware and software components.
+</p>
+											</div> <!-- cd-faq-content -->
+										</li>
+
+										<li>
+											<a href="#0" id="lol">Do the teams need to send a part of the working model while submitting project ideas for the online round?</a>
+											<div class="cd-faq-content">
+												<p>No, it is not necessary to submit a prototype of the working project along with the project idea. But the project idea must be elaborate and well explained.</p>
+											</div> <!-- cd-faq-content -->
+										</li>
+
+										<li>
+											<a  href="#0" id="lol" >Can the students selected for 2nd round complete the project on campus and do they need to carry their laptops?</a>
+											<div class="cd-faq-content">
+												<p>No, the campus round is only for project pitching and demonstration and the working project must be at least 70% completed before bringing it to the campus round. Yes, the students need to carry their own laptops</p>
+											</div> <!-- cd-faq-content -->
+										</li>
+
+									
+									</ul> <!-- cd-faq-group -->
+
+									<ul id="mobile" class="cd-faq-group">
+										<li class="cd-faq-title"><h2>DevDash</h2></li>
+										<li>
+											<a  href="#0" id="lol">What all softwares are allowed for the Webdevelopment competition and do the participants need to bring laptops?</a>
+											<div class="cd-faq-content">
+												<p>Any text editor or any other relevant software can be used. But we won’t provide any software on the spot. So please bring your own software. Yes, the participants need to carry their own laptops. No computers will be provided on the spot.</p>
+											</div> <!-- cd-faq-content -->
+										</li>
+
+										<li>
+											<a  href="#0"id="lol">Is there any preferred theme on which the students need to design for the online round?</a>
+											<div class="cd-faq-content">
+												<p>No, any relevant theme can be chosen. But the idea must be unique and plagiarized designs will not be accepted.</p>
+											</div> <!-- cd-faq-content -->
+										</li>
+
+										
+									</ul> <!-- cd-faq-group -->
+
+									<ul id="account" class="cd-faq-group">
+										<li class="cd-faq-title"><h2>AlgoRythm</h2></li>
+										<li>
+											<a  href="#0" id="lol">Will the first round take place in the college campus? What kind of questions will be provided in the round 2?</a>
+											<div class="cd-faq-content">
+												<p>Yes the first round will take place in the college campus itself. Location details will be provided on the spot. All the details will be provided on the spot. But for solving the questions, as with the first round, the questions can be attempted in any language.</p>
+											</div> <!-- cd-faq-content -->
+										</li>
+
+										<li>
+											<a  href="#0" id="lol">Do the participants need to bring their own laptops for the event?</a>
+											<div class="cd-faq-content">
+												<p>No, the event will take place in college labs. So there is no need for laptops. If you bring your own laptops then you have to manage the internet connection on your own.</p>
+											</div> <!-- cd-faq-content -->
+										</li>
+
+									</ul> <!-- cd-faq-group -->
+
+									<ul id="payments" class="cd-faq-group">
+										<li class="cd-faq-title"><h2>Explora</h2></li>
+										<li>
+											<a  href="#0" id="lol">Will certification be provided for attending the workshop?</a>
+											<div class="cd-faq-content">
+												<p>Yes, participation certificates will be provided for all the events including the workshop.</p>
+											</div> <!-- cd-faq-content -->
+										</li>
+
+									</ul> 
 						</div>
 					</section>
 
-				<!-- CTA -->
+				<!-- CTA
 					<section id="cta" class="wrapper style4">
 						<div class="inner">
 							<header>
@@ -147,6 +470,17 @@
 							</ul>
 						</div>
 					</section>
+			 -->
+					<div class="container-fluid" id="reach">REACH US!</div>
+					<div class="map_wrapper">
+							<div class="map_h_iframe">
+							  <!-- a transparent image is preferable -->
+							 
+							 <iframe frameborder='0' height='476px' width='470px' scrolling='no' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.0181692517444!2d77.06508248652817!3d28.719003010659232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d068dbf44ecd7%3A0xc4ce5551f8ac8360!2sMaharaja+Agrasen+Institute+Of+Technology!5e0!3m2!1sen!2sin!4v1550589899832"
+								frameborder="0" allowfullscreen></iframe>
+							</div></div>
+							<a href="https://www.google.com/maps/dir//Maharaja+Agrasen+Institute+Of+Technology,+Sector+22,+PSP+Area,+Delhi/@28.7197748,77.0310713,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d068dbf44ecd7:0xc4ce5551f8ac8360!2m2!1d77.066091!2d28.719704?hl=en-GB" target="blank"><div id="sitemap"><span id="sitemap_span">Plot No 1 Rohini, Sector 22, PSP Area, Delhi, 110086</span></div></a>
+						  
 
 				<!-- Footer -->
 					<footer id="footer">
@@ -161,9 +495,19 @@
 							<li>&copy; Untitled</li><li></li>
 						</ul>
 					</footer>
-
+                
+<span class="event-link" data-toggle="modal" data-target="#hack_rulebook" style="cursor: pointer;">View RuleBook</span>
 			</div>
 
+<<<<<<< HEAD
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>	
+
+=======
+>>>>>>> ebb21c270e68f1afb3b5a7e5f084d2acf2de2070
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
@@ -172,6 +516,15 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				$(function() {
+					$(document).scroll(function(){
+						var $nav = $(".fixed-top");
+						$nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+					})
+				})
+			</script>
 
 	</body>
 </html>
