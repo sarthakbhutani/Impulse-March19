@@ -4073,3 +4073,12 @@ input, select, textarea {
 	.bigfont{
 		font-size: 30px;
 	}
+
+	.carousel-inner{
+		height: 500px;
+		width: 100%;
+	}
+
+	.container{
+		width: 1000px;
+	}
