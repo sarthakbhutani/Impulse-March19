@@ -4082,8 +4082,38 @@ input, select, textarea {
 	.container{
 		width: 1000px;
 	}
-	.middle{
-		display: flex;
-		align-items: center;
-		justify-content: center
+	.mait_hacks
+	{
+		text-align: justify;
+		text-justify: inter-word;
 	}
+	#sponsor_1
+	{   
+	  
+	  margin-top: 10px;
+		height: 180px;
+		 width: 320px;
+		 border-radius: 10px;
+	  }
+	  
+	  #sponsor_2
+  {
+	
+		height: 80px;
+		 width: 160px;
+		 border-radius: 10px;
+  }
+  #sponsor_3
+  {
+	
+		height: 80px;
+		 width: 160px;
+		 border-radius: 10px;
+  }
+  #sponsor_4
+  {
+	
+	  height: 80px;
+	   width: 160px;
+	   border-radius: 10px;	
+  }
