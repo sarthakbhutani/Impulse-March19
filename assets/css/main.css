@@ -4082,3 +4082,8 @@ input, select, textarea {
 	.container{
 		width: 1000px;
 	}
+	.middle{
+		display: flex;
+		align-items: center;
+		justify-content: center
+	}
