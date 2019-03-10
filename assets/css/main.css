@@ -4032,7 +4032,11 @@ input, select, textarea {
 
 	  #navcolour a{
 		  color:  #21b2a6;
-	  }
+		}
+		html
+	{
+		overflow-x: hidden;
+	}
 
 	  #navcolour img{
 		  height: 80px;
@@ -4048,18 +4052,8 @@ input, select, textarea {
 		  font-size: 20px;
 		  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	  }
-	  #sponsors_v
-	  {
-		  background: rgb(87, 83, 83);
-		  height: 150px;
-	  }
-	  #sponsor_1
-	  {   margin-left: 100px;
-		margin-top: 25px;
-		  height: 80px;
-		   width: 160px;
-		   border-radius: 10px;
-		}
+	 
+	
 		#sponsor_2
 	{
 		margin-left: 100px;
@@ -4122,10 +4116,16 @@ input, select, textarea {
 	#sponsor_1
 	{
 
-	  margin-top: 10px;
-		height: 180px;
-		 width: 320px;
+	  margin-top: 0px;
+		
+		 width: 280px;
 		 border-radius: 10px;
+		 margin-left: 0px;
+		 margin-top: 25px;
+			 height: 200px;
+			 overflow-x: hidden;
+			
+				
 	  }
 
 	  #sponsor_2
