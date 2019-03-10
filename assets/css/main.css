@@ -2528,6 +2528,9 @@ input, select, textarea {
 	color:#ffffff;
 	text-decoration: none;
 }
+button.primary {
+	outline:none;
+}
 .primary a:hover{
 	color: white;
 	text-decoration: none;
