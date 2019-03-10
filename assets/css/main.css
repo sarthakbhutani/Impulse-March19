@@ -7,9 +7,9 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 .iosdlogo{
-    
-	
-	
+
+
+
 }
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4,h5, h6, p, blockquote,
@@ -1767,7 +1767,7 @@ input, select, textarea {
 	}
 	#sitemap
 	{
-		
+
 		background-color:black;
 	}
 	.map_wrapper {
@@ -2699,7 +2699,7 @@ input, select, textarea {
 			order: 2;
 			max-width: 48em;
 			width: 60%;
-			
+
 		}
 
 		.spotlight  p{
@@ -2828,7 +2828,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
+			background-color: #002041;
 			color: #c8ece9;
 		}
 
@@ -2864,7 +2864,7 @@ input, select, textarea {
 				color: #c8ece9;
 				font-size: 18px;
 				line-height: 0.5em;
-				
+
 			}
 
 			.wrapper.style1 label {
@@ -3457,7 +3457,7 @@ input, select, textarea {
 	#header {
 		-moz-transition: background-color 0.2s ease;
 		-webkit-transition: background-color 0.2s ease;
-		-ms-transition: background-color 0.2s ease; 
+		-ms-transition: background-color 0.2s ease;
 		transition: background-color 0.2s ease;
 		background: #2e3842;
 		height: 3em;
@@ -4015,13 +4015,13 @@ input, select, textarea {
 	.bgbox{
 		height: 100px;
 		background:transparent;
-		
+
 		text-align: center;
 		padding: 23px;
 		font-size: 50px;
-		
+
 		font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	
+
 	  }
 
 	  #demo{
@@ -4082,7 +4082,7 @@ input, select, textarea {
 		margin-top: 25px;
 		height: 80px;
 		 width: 160px;
-		 border-radius: 10px;	
+		 border-radius: 10px;
 	}
 	  #navbarSupportedContent a:hover{
 		  color: white;
@@ -4091,7 +4091,7 @@ input, select, textarea {
 	  .navbar-toggler{
 		  background-color: rgb(45, 42, 190);
 	  }
- 
+
 	  .align{
 		  align-items: center;
 	  }
@@ -4114,47 +4114,217 @@ input, select, textarea {
 		width: 100%;
 	}
 
-	.container{
-		width: 1000px;
-	}
 	.mait_hacks
 	{
 		text-align: justify;
 		text-justify: inter-word;
 	}
 	#sponsor_1
-	{   
-	  
+	{
+
 	  margin-top: 10px;
 		height: 180px;
 		 width: 320px;
 		 border-radius: 10px;
 	  }
-	  
+
 	  #sponsor_2
   {
-	
+
 		height: 80px;
 		 width: 160px;
 		 border-radius: 10px;
   }
   #sponsor_3
   {
-	
+
 		height: 80px;
 		 width: 160px;
 		 border-radius: 10px;
   }
   #sponsor_4
   {
-	
+
 	  height: 80px;
 	   width: 160px;
-	   border-radius: 10px;	
+	   border-radius: 10px;
   }
 
   .middle{
 	  display: flex;
 	  align-items: center;
 	  justify-content: center;
+  }
+
+
+  .name{
+  	font-size: 15px;
+  	font-weight: 700;
+  }
+  .team-container{
+  	display: grid;
+  	width: 80%;
+  	margin: auto;
+  	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .team-container h2{
+  	grid-column: 1/6;
+  	text-align: center;
+    }
+    .member{
+  	height: 300px;
+  	/* width: 300px; */
+    }
+    .f1{
+  	grid-column: 2/3;
+    }
+    .f2{
+  	grid-column: 4/5;
+    }
+    .cn1{
+  	grid-column: 2/3;
+    }
+    .cn4{
+  	grid-column: 2/3;
+    }
+    .cr1{
+  	grid-column: 1/2;
+    }
+    .cr6{
+  	grid-column: 1/2;
+    }
+    .cr11{
+  	grid-column: 2/3;
+    }
+    .team-leader-container{
+  	display: grid;
+  	width: 80%;
+  	margin: auto;
+  	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .team-leader-container h2{
+    	text-align: center;
+    }
+    .dev{
+  	grid-column: 1/8;
+  	text-align: center;
+    }
+    .d1{
+  	grid-column: 2/3;
+    }
+    .cnt-head{
+  	grid-column: 3/4;
+    }
+    .cnt1{
+  	grid-column: 3/4;
+    }
+    .crft-head{
+  	grid-column: 2/4;
+    }
+    .crft1 {
+  	  grid-column: 2;
+    }
+    .pr-head{
+  	grid-column: 4/6;
+    }
+    .lg-head{
+  	grid-column: 1/8;
+    }
+    #mobile{
+  	display: none;
+    }
+    .member img{
+      display: block;
+      margin: auto;
+      width: 200px;
+      height: 200px;
+      margin:auto;
+      border-radius: 100%;
+      padding: 10px;
+      transition: all 0.2s;
+  }
+  .member img:hover {
+    cursor: pointer;
+  	transform: scale(1.1);
+  }
+
+  .member div{ /* text under the images */
+      font-size: 15px;
+      text-align: center;
+  }
+
+  .member div i{
+  color: #a6e0db;
+  font-size: 15px;
+  }
+    @media only screen and (max-width: 425px) {
+  	.team-container{
+  	  display: block;
+  	  width: 70%;
+  	  margin: auto;
+  	}
+  	.member{
+  	  width: 100%;
+      height: 250px;
+  	}
+
+    .member img{
+      height: 200px;
+      width: 200px;
+      padding: 10px;
+    }
+  	.team-leader-container{
+  	  display: block;
+  	  width: 70%;
+  	  margin: auto;
+  	}
+  	#desktop{
+  	  display: none;
+  	}
+  	#mobile{
+  	  display: block;
+  	}
+    }
+    @media (min-width:426px) and (max-width: 786px) {
+      .member{
+        height: 150px;
+      }
+      .member img{
+        height: 100px;
+        width: 100px;
+        padding: 10px;
+      }
+      #team h2{
+        font-size: 13px;
+        height: 20px;
+        line-height: 20px;
+        margin-bottom: 10px;
+      }
+      .member div i{
+        color: #a6e0db;
+        font-size: 10px;
+      }
+      .member div{
+          font-size: 10px;
+          font-weight: none;
+          text-align: center;
+      }
+
+    }
+    @media (min-width:787px) and (max-width: 1024px) {
+      .member{
+        height: 200px;
+      }
+      .member img{
+        height: 150px;
+        width: 150px;
+        padding: 10px;
+      }
+      .member div{
+          font-size: 15px;
+          font-weight: none;
+          text-align: center;
+      }
+
   }
