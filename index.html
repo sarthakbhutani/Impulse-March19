@@ -28,11 +28,11 @@
 							<a class="navbar-brand" href="#">
 								<img src="./images/LOGO1.PNG" alt="logo">
 							</a>
-							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<button class="navbar-toggler" type="button" id="navbtn" data-toggle="collapse"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							  <span class="navbar-toggler-icon"></span>
 							</button>
 
-							<div class="collapse navbar-collapse align" id="navbarSupportedContent">
+							<div class="collapse navbar-collapse align" id="navbarSupportedContent" style="background-color: black">
 							  <ul class="navbar-nav ml-auto" >
 								<li class="nav-item active">
 								  <a class="nav-link more scrolly" href="#one">ABOUT</a>
@@ -102,6 +102,29 @@
 									document.getElementById("demo").innerHTML = "EXPIRED";
 									}
 								}, 1000);
+
+
+
+								</script>
+								<script>
+									var p=0;
+								$(document).ready(()=>{
+									$('#navbarSupportedContent').hide();
+									$('#navbtn').click(()=>
+									{
+										if(p==0)
+										{
+										$('#navbarSupportedContent').hide('slow');
+										p=1;
+										}
+										else
+										{
+											$('#navbarSupportedContent').show('slow');
+											p=0;
+										}
+									})
+								}
+								)
 								</script>
 							</div>
 
@@ -148,13 +171,14 @@
 									<div class="modal-content card card-image" style="background:black;">
 										<div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
 											<!--Header-->
-											<div class="modal-header text-center pb-4">
-												<h3 class="modal-title w-100 white-text font-weight-bold" id="myModalLabel"><strong>MaitHacks
-												</strong>&nbsp;&nbsp;&nbsp;
+											<div class="modal-header row">
+												<div class="col-lg-6"><h3 class="modal-title w-100 white-text font-weight-bold" id="myModalLabel"><strong>MaitHacks
+												</strong></h3></div><div class="col-lg-6">
 												<button type="button"  data-dismiss="modal" >
 												 Close
 
 												</button>
+												</div>
 											</div>
 											<!--Body-->
 											<div class="modal-body">
@@ -184,7 +208,7 @@
 									<!--/.Content-->
 								</div>
 
-							<button class="primary mx-2" data-toggle="modal" data-target="#darkModalForm_hacks">View Rule Book</button>
+							<button class="primary mx-2 my-2" data-toggle="modal" data-target="#darkModalForm_hacks">View Rule Book</button>
 							</div>
 
 						</section>
@@ -197,7 +221,7 @@
 								<div style="color:#21b2a6;font-weight:600">DEADLINE: </div><br>
 								<a href="https://docs.google.com/forms/d/e/1FAIpQLSdcaGhKE8WNoDE00qSJngt6O-wx8tpDkgTRhSXkuA5XHQwf9Q/viewform?embedded=true" target="_blank"><button class="primary">Register</button></a>
 
-  <button class="primary mx-2" data-toggle="modal" data-target="#darkModalForm_algo">View Rule Book</button>
+  <button class="primary mx-2 my-2" data-toggle="modal" data-target="#darkModalForm_algo">View Rule Book</button>
 									<!-- Trigger the modal with a button -->
 
 
@@ -209,13 +233,15 @@
     <div class="modal-content card card-image" style="background:black;">
       <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
         <!--Header-->
-        <div class="modal-header text-center pb-4">
-          <h3 class="modal-title w-100 white-text font-weight-bold" id="myModalLabel"><strong>AlgoRythm</strong>&nbsp;&nbsp;&nbsp;
-          <button type="button"  data-dismiss="modal" >
-           Close
+				<div class="modal-header row">
+						<div class="col-lg-6"><h3 class="modal-title w-100 white-text font-weight-bold" id="myModalLabel"><strong>AlgoRythm
+						</strong></h3></div><div class="col-lg-6">
+						<button type="button"  data-dismiss="modal" >
+						 Close
 
-          </button>
-        </div>
+						</button>
+						</div>
+					</div>
         <!--Body-->
         <div class="modal-body">
           <!--Body-->
@@ -252,20 +278,23 @@
 
 									<div style="color:#21b2a6;font-weight:600">DEADLINE: </div><br>
 									<a href="https://docs.google.com/forms/d/e/1FAIpQLSebPWqNjuR_ss_wqgLHbbvvy6z_polrO8sg4tyn-KsFOfnq_Q/viewform?embedded=true" target="_blank"><button class="primary">Register</button></a>
-								<div class="modal fade" id="darkModalForm_webbash" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                  <button class="primary mx-2 my-2" data-toggle="modal" data-target="#darkModalForm_webbash">View Rule Book</button>								
+									<div class="modal fade" id="darkModalForm_webbash" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
 								aria-hidden="true">
 								<div class="modal-dialog form-dark" role="document">
 									<!--Content-->
 									<div class="modal-content card card-image" style="background:black;">
 										<div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
 											<!--Header-->
-											<div class="modal-header text-center pb-4">
-												<h3 class="modal-title w-100 white-text font-weight-bold" id="myModalLabel"><strong>DevDash</strong>&nbsp;&nbsp;&nbsp;
-												<button type="button"  data-dismiss="modal" >
-												 Close
-
-												</button>
-											</div>
+											<div class="modal-header row">
+													<div class="col-lg-6"><h3 class="modal-title w-100 white-text font-weight-bold" id="myModalLabel"><strong>DevDash
+													</strong></h3></div><div class="col-lg-6">
+													<button type="button"  data-dismiss="modal" >
+													 Close
+							
+													</button>
+													</div>
+												</div>
 											<!--Body-->
 											<div class="modal-body">
 												<!--Body-->
@@ -296,7 +325,7 @@
 								</div>
 							</div>
 							<!-- Modal -->
-								<button class="primary mx-2" data-toggle="modal" data-target="#darkModalForm_webbash">View Rule Book</button>
+								
 							</div>
 						</section>
 						<section class="spotlight">
@@ -305,7 +334,7 @@
 								<h5 style="color:#21b2a6">Explore the unrevealed!!!</h5>
 								<p>Well, Impulse'19 won’t let you down. We bring to you an intensive 6-hour workshop that will help you learn, visualize and hone your skills with various group discussions to encourage innovative thinking. Grab this opportunity to learn from experienced personnel and expand your share of knowledge.</p>
 								<div style="color:#21b2a6;font-weight:600">DEADLINE: </div><br>
-							<a href="https://docs.google.com/forms/d/e/1FAIpQLScuNjO_eSIqRD_1zMcKnX4hI_9aU27sMkcMfqaaMzMfjtAE-w/viewform?embedded=true" target="_blank"><button class="primary">Register</button></a><br>
+							<a href="https://docs.google.com/forms/d/e/1FAIpQLScuNjO_eSIqRD_1zMcKnX4hI_9aU27sMkcMfqaaMzMfjtAE-w/viewform?embedded=true" target="_blank"><button class="primary my-2">Register</button></a><br>
 							</div>
 						</section>
 						<section class="spotlight">
@@ -609,7 +638,8 @@
 	 							<img class="commonimg" src="./images/shivanshu.jpg" alt="person2">
 	 							<div  >Shivanshu Garg</div>
 	 						</div>
-	 						<h2 class="lg-head">Logistics Head</h2>
+							 <h2 class="lg-head">Logistics Head</h2>
+							 
 	 						<div class="member lg1">
 	 							<img class="commonimg" src="./images/raghav.JPG" alt="">
 	 							<div  >Raghav Gandhi </div>
@@ -622,18 +652,8 @@
 	 							<img class="commonimg" src="./images/shubhamsingla.jpg" alt="">
 	 							<div  >Shubham Singla </div>
 	 						</div>
-	 						<div class="member lg4">
-	 							<img class="commonimg" src="./images/.jpg" alt="person1">
-	 							<div  > </div>
-	 						</div>
-	 						<div class="member lg5">
-	 							<img class="commonimg" src="./images/.jpg" alt="person1">
-	 							<div  > </div>
-	 						</div>
-	 						<div class="member lg6">
-	 							<img class="commonimg" src="./images/.jpg" alt="person1">
-	 							<div  > </div>
-	 						</div>
+	 						
+	 					
 
 				</section>
 					<!--Sponsors-->
@@ -656,22 +676,40 @@
 					</div>
 					</section> -->
 					<section id="spon">
-						<div style="background-color: black"><span style="margin-left: 20px;"><h2 id = "event_title" class="middle"style="margin-left: 30px">OUR SPONSORS </h2></span></div>
-						<div class="row" style=" visibility: visible;margin-left:0px; animation-name: fadeInUp;background-color: rgb(48, 11, 48);">
-								<div class="col-lg-3 col-md-6"style="height: 280px;margin-left: 0px;">
+							<div style="background-color: black"><span style="margin-left: 20px;"><h2 id = "event_title" class="middle"style="margin-left: 30px">OUR SPONSORS</h3></span></div>
+								<div class="row no-gutters clients-wrap clearfix wow fadeInUp" style="text-align: center; visibility: visible; animation-name: fadeInUp;background-color: rgb(48, 11, 48);overflow-y:hidden">
+										<div class="col-lg-3 col-md-6"style="height: px;">
+										<a href="https://nowwt.com/" target="_blank"><img id="sponsor_1"src="Images/sponsor1.jpeg" alt="nowwt"></a><br>NOWWT
+										</div>
+										<div class="col-lg-3 col-md-6" style="height: 300px;">
+										<a href="https://www.hackerearth.com/" target="_blank"><img id="sponsor_1" src="images/sponsor_hacker.png" alt="hackerearth"></a><br>HACKER EARTH
+										</div>
+										<div class="col-lg-3 col-md-6" style="height: 300px;">
+												<a href="https://codingninjas.in/" target="_blank"><img id="sponsor_1" src="images/coding_sponsor.jpg" alt="hackerearth"></a><br>CODING NINJAS
+												</div>
+												<div class="col-lg-3 col-md-6" style="height: 300px;">
+														<a href="https://www.duexpress.in/" target="_blank"><img id="sponsor_1" src="images/du_sponsors.png" alt="hackerearth"></a><br>DU EXPRESS
+														</div>
+
+
+										</div>
+						<!---<div class="container-fluid " style=" visibility: visible;margin-left:0px; animation-name: fadeInUp;background-color: rgb(48, 11, 48);overflow-y:hidden">
+							<div class="row">
+								<div class="col-lg-3 col-md-6 col-sm-12"style="height: px;">
 								<a href="https://nowwt.com/" target="_blank"><img id="sponsor_1"src="images/sponsor1.jpeg" alt="nowwt"></a>
 								</div>
-								<div class="col-lg-3 col-md-6" style="height: 280px;margin-left: 0px;">
+								<div class="col-lg-3 col-md-6 col-sm-12" style="height:300px;">
 								<a href="https://www.hackerearth.com/" target="_blank"><img id="sponsor_1" src="images/sponsor_hacker.png" alt="hackerearth"></a>
 								</div>
-								<div class="col-lg-3 col-md-6" style="height: 280px;">
+								<div class="col-lg-3 col-md-6 col-sm-12" style="height: px;">
 										<a href="https://codingninjas.in/" target="_blank"><img id="sponsor_1" src="images/coding_sponsor.jpg" alt="codingblocks"></a>
 										</div>
-										<div class="col-lg-3 col-md-6" style="height: 200px;">
+										<div class="col-lg-3 col-md-6 col-sm-12" style="height: 300px;">
 												<a href="https://www.duexpress.in/" target="_blank"><img id="sponsor_1" src="images/du_sponsors.png" alt="jetbrains"></a>
 												</div>
 
 								</div>
+								</div>-->
 								</section>
 								<section id="spon">
 									<div style="background-color: black"><span style="margin-left: 20px;"><h2 id = "event_title" class="middle"style="margin-left: 30px">Media Partners</h3></span></div>
@@ -688,36 +726,51 @@
 											</section>
 						 <!--MAPS-->
 						 <section>
-							<div class="container-fluid" id="reach">REACH US!</div>
-							<div class="row wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-								<div class="col-lg-6">
+								<div style="background-color: black"><span style="margin-left: 20px;"><h2 id = "event_title" class="middle"style="margin-left: 30px">REACH US</h3></span></div>
+							   <div class="container-fluid">
+									 <div class="row">
+								<div class="col-lg-6 col-sm-12 col-md-6">
 
-									<div class="map mb-4 mb-lg-0" style="margin-left: 7px;">
+									<div >
 									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.0181692517444!2d77.06508248652817!3d28.719003010659232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d068dbf44ecd7%3A0xc4ce5551f8ac8360!2sMaharaja+Agrasen+Institute+Of+Technology!5e0!3m2!1sen!2sin!4v1550589899832" frameborder="0" style="border:0; width: 100%; height: 350px;" allowfullscreen=""></iframe>
 									</div>
 									</div>
-								<div class="col-lg-6">
+									<div class="col-lg-6 col-sm-10 col-md-6">
+									<h2>MAHARAJA AGRASEN INSTITUTE OF TECHNOLOGY</h2>
+									<h2>Plot No 1 Rohini, Sector 22, PSP Area, Delhi, 110086</h2>
+									<h2>Contact : +91 9013803905</h2>
+									<h2>Email At: <a style="color: rgb(255, 251, 251);" href="mailto:contact@iosd.tech">contact@iosd.tech</a></h2>
+									</div>
+									</div>
+									</div>
+								<!---div class="col-lg-6">
 								<div  class="row">
 								<div class="col-md-8 info">
 								<i class="ion-ios-location-outline"></i>
 								<i class="ion-ios-location-outline">
-								<div style="margin-left: 0px;font-size: 30px;overflow-y: hidden; margin-top: 10px; ">Maharaja Agrasen Institute Of Technology</div></i><br>
+								<div style="margin-left: 0px;font-size: 30px;overflow-y: hidden; margin-top: 10px; ">Maharaja Agrasen Institute <br> Of Technology</div></i><br>
 								<div style="margin-left: 0px;font-size: 25px;overflow-y: hidden; ">Plot No 1 Rohini, Sector 22, PSP Area, Delhi, 110086</div><br>
 								<div style="margin-left: 0px;font-size: 25px;overflow-y: hidden;">Contact At:<a href="contact@iosd.tech">contact@iosd.tech</a></div><br><br>
 								<div style="margin-left: 0px; font-size: 25px;overflow-y: hidden;">Call Us At:<a style="color:white;" href="tel:+91 9013803905">+91 9013803905</a></div>
 								</div>
 								</div>
-								</div>
-								</div>
+								</div>-->
+								
+								
 								</section>
+							
+						
+						
+						
+								
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://twitter.com/iosdofficial?lang=en" class="icon fa-twitter" target="blank"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/IOSDMAIT/" class="icon fa-facebook" target="blank"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/iosdofficial/?hl=en" class="icon fa-instagram" target="blank"><span class="label">Instagram</span></a></li>
 							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+							<li><a href="mailto:contact@iosd.tech" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 						</ul>
 						<ul class="copyright">
 							<li>&copy; IOSD</li><li></li>
