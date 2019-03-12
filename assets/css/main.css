@@ -4399,3 +4399,9 @@ button.primary {
 		.show{
 			background-color: #172634;
 		}
+
+	  @media only screen and (max-width:974px){
+			.backcolour{
+				background-color: #172634;
+			}
+		}
