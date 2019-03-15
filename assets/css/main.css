@@ -4213,7 +4213,14 @@ button.primary {
   	margin: auto;
   	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
-    .team-leader-container h2{
+
+    .team-leader-container2{
+  	display: grid;
+  	width: 80%;
+  	margin: auto;
+  	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .team-leader-container h2, .team-leader-container2 h2{
     	text-align: center;
     }
     .dev{
@@ -4224,10 +4231,13 @@ button.primary {
   	grid-column: 2/3;
     }
     .cnt-head{
-  	grid-column: 3/4;
+  	grid-column: 2/3;
     }
+		.dsgn-head{
+		grid-column: 3/5;
+		}
     .cnt1{
-  	grid-column: 3/4;
+  	grid-column: 2/3;
     }
     .crft-head{
   	grid-column: 2/4;
@@ -4241,6 +4251,9 @@ button.primary {
     .lg-head{
   	grid-column: 1/8;
     }
+		.lg1{
+			grid-column: 1/2;
+		}
     #mobile{
   	display: none;
     }
@@ -4284,7 +4297,7 @@ button.primary {
       width: 200px;
       padding: 10px;
     }
-  	.team-leader-container{
+  	.team-leader-container, .team-leader-container2{
   	  display: block;
   	  width: 70%;
   	  margin: auto;
@@ -4349,8 +4362,8 @@ button.primary {
 				width: 250px;
 			}
 		}
-		
-		
+
+
 		@media only screen and (max-width:425px){
 			.bgbox{
 				font-size: 50px;
@@ -4387,7 +4400,7 @@ button.primary {
 				height: 153.953px;
 			}
 		}
-	
+
 
 
 		.navbar-toggler{
