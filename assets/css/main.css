@@ -4121,7 +4121,7 @@ button.primary {
 	.mait_hacks
 	{
 		text-align: justify;
-		text-justify: inter-word;
+		text-justify:inter-cluster;
 	}
 	#sponsor_1
 	{
@@ -4423,6 +4423,30 @@ button.primary {
 			background-color: #21b2a6;
 			border: none;
 		}
+		@media (min-width: 992px) {
+			.modal-dialog {
+				max-width: 60%;
+			}
+		}
+		.modal-content
+		{
+			overflow: auto;
+		}
+	
+	
+	/* Important part */
+	.modal-dialog{
+			overflow-y: initial !important
+	}
+	@media (min-width: 992px) {
+	.modal-body{
+			height: 425px;
+			overflow-y: auto;
+	}
+}
+
+	
+	
 		/* .fa.fa-navicon {
 			color:white;
 		} */
