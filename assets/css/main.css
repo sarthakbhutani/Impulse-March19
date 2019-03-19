@@ -4444,6 +4444,14 @@ button.primary {
 			overflow-y: auto;
 	}
 }
+@media (max-width: 476px)
+{
+.du_express{
+	width: 90%;
+	
+
+}
+}
 
 	
 	
